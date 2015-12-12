@@ -1,0 +1,270 @@
+{
+    "margin": {
+        "x": 5,
+        "y": 5
+    },
+    "size": {
+        "width": 300,
+        "height": 360
+    },
+    "columns": 3,
+    "widgets": [{
+        "id": "logo",
+        "view": "image",
+        "sizex": 1,
+        "sizey": 1,
+        "style": {
+            "background-color": "#4b4b4b"
+        },
+        "data": {
+            "image": "https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        }
+    }, {
+        "id": "clock",
+        "view": "clock",
+        "sizex": 1,
+        "sizey": 1,
+        "icon": "fa-clock-o"
+    }, {
+        "id": "synergy",
+        "view": "meter",
+        "sizex": 1,
+        "sizey": 1,
+        "style": {
+            "background-color": "#9c4274"
+        },
+        "config": {
+            "title": "温度",
+            "info": "大楼"
+        },
+        "data": {
+            "value": 90
+        }
+    } , {
+        "id": "door",
+        "view": "text",
+        "sizex": 1,
+        "sizey": 1,
+        "icon": "fa-sign-out",
+        "style": {
+            "background-color": "#D0104C"
+        },
+        "data": {
+            "title": "入口状态"
+        }
+    }, {
+        "id": "elevator",
+        "view": "number",
+        "sizex": 1,
+        "sizey": 1,
+        "hidediff": true,
+        "icon": "fa-sort",
+        "style": {
+            "background-color": "#005CAF"
+        },
+        "config": {
+            "title": "电梯位置",
+            "suffix": "楼",
+            "show_diff": false
+        }
+    }, {
+        "id": "wifi",
+        "view": "number",
+        "sizex": 1,
+        "sizey": 1,
+        "icon": "fa-wifi",
+        "style": {
+            "background-color": "#96bf48"
+        },
+        "config": {
+            "title": "无线链接",
+            "info": "当前无线连接人数"
+        }
+    }, {
+        "id": "tweets",
+        "view": "comments",
+        "sizex": 2,
+        "sizey": 1,
+        "icon": "fa-twitter",
+        "style": {
+            "background-color": "#44312d"
+        },
+        "config": {
+            "title": "Tweets",
+            "info": "#TodayILearned"
+        },
+        "data": {
+            "comments": [{
+                "avatar": "https://pbs.twimg.com/profile_images/576819978197827584/jviUkOmr_normal.png",
+                "name": "reddit TIL",
+                "quote": "#TodayILearned that I can face criminal charges for doing the Nazi salute in Germany"
+            },
+            {
+                "avatar": "https://pbs.twimg.com/profile_images/584787302892707840/Ix_AGWHt_normal.jpg",
+                "name": ">Nick Schilling",
+                "quote": "@kare11 #TodayILearned people even complain about budget surpluses."
+            }]
+        }
+    }, {
+        "id": "line",
+        "view": "chartjs",
+        "sizex": 2,
+        "sizey": 1,
+        "config": {
+            "title": "空气质量",
+            "data_config": [{
+                "label": "PM 2.5",
+                "fillColor": "rgba(220,220,220,0.2)",
+                "strokeColor": "rgba(220,220,220,1)",
+                "pointColor": "rgba(220,220,220,1)",
+                "pointStrokeColor": "#fff",
+                "pointHighlightFill": "#fff",
+                "pointHighlightStroke": "rgba(220,220,220,1)"
+            }, {
+                "label": "PM 10",
+                "fillColor": "rgba(151,187,205,0.2)",
+                "strokeColor": "rgba(151,187,205,1)",
+                "pointColor": "rgba(151,187,205,1)",
+                "pointStrokeColor": "#fff",
+                "pointHighlightFill": "#fff",
+                "pointHighlightStroke": "rgba(151,187,205,1)"
+            }],
+            "options": {
+                "showTooltips": false,
+                "pointDot": false
+            },
+            "limit": 20
+        }
+    }, {
+        "id": "line",
+        "view": "chartjs",
+        "sizex": 2,
+        "sizey": 1,
+        "config": {
+            "title": "空气质量",
+            "type": "Bar",
+            "data_config": [{
+                "label": "PM 2.5",
+                "fillColor": "rgba(220,220,220,0.5)",
+                "strokeColor": "rgba(220,220,220,0.8)",
+                "highlightFill": "rgba(220,220,220,0.75)",
+                "highlightStroke": "rgba(220,220,220,1)"
+            }, {
+                "label": "PM 10",
+                "fillColor": "rgba(151,187,205,0.5)",
+                "strokeColor": "rgba(151,187,205,0.8)",
+                "highlightFill": "rgba(151,187,205,0.75)",
+                "highlightStroke": "rgba(151,187,205,1)"
+            }],
+            "limit": 20
+        }
+    }, {
+        "id": "line",
+        "view": "chartjs",
+        "sizex": 1,
+        "sizey": 1,
+        "config": {
+            "title": "空气质量",
+            "type": "Radar",
+            "data_config": [{
+                "label": "PM 2.5",
+                "fillColor": "rgba(220,220,220,0.2)",
+                "strokeColor": "rgba(220,220,220,1)",
+                "pointColor": "rgba(220,220,220,1)",
+                "pointStrokeColor": "#fff",
+                "pointHighlightFill": "#fff",
+                "pointHighlightStroke": "rgba(220,220,220,1)"
+            }, {
+                "label": "PM 10",
+                "fillColor": "rgba(151,187,205,0.2)",
+                "strokeColor": "rgba(151,187,205,1)",
+                "pointColor": "rgba(151,187,205,1)",
+                "pointStrokeColor": "#fff",
+                "pointHighlightFill": "#fff",
+                "pointHighlightStroke": "rgba(151,187,205,1)"
+            }],
+            "limit": 5
+        }
+    }, {
+        "id": "segment",
+        "view": "chartjs",
+        "sizex": 1,
+        "sizey": 1,
+        "config": {
+            "title": "其他",
+            "type": "PolarArea",
+            "data_config": [{
+                "color": "#F7464A",
+                "highlight": "#FF5A5E",
+                "label": "Red"
+            }, {
+                "color": "#46BFBD",
+                "highlight": "#5AD3D1",
+                "label": "Green"
+            }, {
+                "color": "#FDB45C",
+                "highlight": "#FFC870",
+                "label": "Yellow"
+            }, {
+                "color": "#949FB1",
+                "highlight": "#A8B3C5",
+                "label": "Grey"
+            }, {
+                "color": "#4D5360",
+                "highlight": "#616774",
+                "label": "Dark Grey"
+            }]
+        }
+    }, {
+        "id": "segment",
+        "view": "chartjs",
+        "sizex": 1,
+        "sizey": 1,
+        "config": {
+            "title": "其他",
+            "type": "Pie",
+            "data_config": [{
+                "value": 300,
+                "color":"#F7464A",
+                "highlight": "#FF5A5E",
+                "label": "Red"
+            },
+            {
+                "value": 50,
+                "color": "#46BFBD",
+                "highlight": "#5AD3D1",
+                "label": "Green"
+            },
+            {
+                "value": 100,
+                "color": "#FDB45C",
+                "highlight": "#FFC870",
+                "label": "Yellow"
+            }]
+        }
+    }, {
+        "id": "segment",
+        "view": "chartjs",
+        "sizex": 1,
+        "sizey": 1,
+        "config": {
+            "title": "其他",
+            "type": "Doughnut",
+            "data_config": [{
+                "color":"#F7464A",
+                "highlight": "#FF5A5E",
+                "label": "Red"
+            },
+            {
+                "color": "#46BFBD",
+                "highlight": "#5AD3D1",
+                "label": "Green"
+            },
+            {
+                "color": "#FDB45C",
+                "highlight": "#FFC870",
+                "label": "Yellow"
+            }]
+        }
+    }]
+}

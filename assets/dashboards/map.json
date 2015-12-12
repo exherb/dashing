@@ -1,0 +1,24 @@
+{
+    "margin": {
+        "x": 5,
+        "y": 5
+    },
+    "size": {
+        "width": 238,
+        "height": 218
+    },
+    "columns": 4,
+    "widgets": [{
+        "id": "map",
+        "view": "map",
+        "style": {
+            "background-color": "#222"
+        },
+        "sizex": 4,
+        "sizey": 4,
+        "config": {
+            "title": "病毒爆发",
+            "scale": 800
+        }
+    }]
+}

@@ -1,0 +1,20 @@
+{
+    "margin": {
+        "x": 5,
+        "y": 5
+    },
+    "size": {
+        "width": 238,
+        "height": 218
+    },
+    "columns": 4,
+    "widgets": [{
+        "id": "sperm",
+        "view": "sperm",
+        "sizex": 4,
+        "sizey": 4,
+        "config": {
+            "title": "Swiming Pool"
+        }
+    }]
+}

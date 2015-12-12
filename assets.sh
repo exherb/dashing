@@ -1,0 +1,3 @@
+cd assets/
+go-bindata -pkg dashing -o ../assets.go ./...
+cd ..

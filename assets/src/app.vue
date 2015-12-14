@@ -151,7 +151,7 @@ export default {
                 var hours = timestamp.getHours()
                 var minutes = ("0" + timestamp.getMinutes()).slice(-2);
                 var seconds = ("0" + timestamp.getSeconds()).slice(-2);
-                var updated = `最后更新 ${hours}:${minutes}:${seconds}`;
+                var updated = `Last update: ${hours}:${minutes}:${seconds}`;
 
                 var data = JSON.parse(e.data);
                 var dataId = data.id;

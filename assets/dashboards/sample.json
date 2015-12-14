@@ -34,8 +34,8 @@
             "background-color": "#9c4274"
         },
         "config": {
-            "title": "温度",
-            "info": "大楼"
+            "title": "Synergy",
+            "info": "Building"
         },
         "data": {
             "value": 90
@@ -50,7 +50,7 @@
             "background-color": "#D0104C"
         },
         "data": {
-            "title": "入口状态"
+            "title": "Door"
         }
     }, {
         "id": "elevator",
@@ -63,8 +63,8 @@
             "background-color": "#005CAF"
         },
         "config": {
-            "title": "电梯位置",
-            "suffix": "楼",
+            "title": "Elevator",
+            "suffix": "Floor",
             "show_diff": false
         }
     }, {
@@ -77,8 +77,8 @@
             "background-color": "#96bf48"
         },
         "config": {
-            "title": "无线链接",
-            "info": "当前无线连接人数"
+            "title": "WiFi",
+            "info": "Connectaed"
         }
     }, {
         "id": "tweets",
@@ -111,7 +111,7 @@
         "sizex": 2,
         "sizey": 1,
         "config": {
-            "title": "空气质量",
+            "title": "Air Quality",
             "data_config": [{
                 "label": "PM 2.5",
                 "fillColor": "rgba(220,220,220,0.2)",
@@ -141,7 +141,7 @@
         "sizex": 2,
         "sizey": 1,
         "config": {
-            "title": "空气质量",
+            "title": "Air Quality",
             "type": "Bar",
             "data_config": [{
                 "label": "PM 2.5",
@@ -164,7 +164,7 @@
         "sizex": 1,
         "sizey": 1,
         "config": {
-            "title": "空气质量",
+            "title": "Air Quality",
             "type": "Radar",
             "data_config": [{
                 "label": "PM 2.5",
@@ -191,7 +191,7 @@
         "sizex": 1,
         "sizey": 1,
         "config": {
-            "title": "其他",
+            "title": "Other",
             "type": "PolarArea",
             "data_config": [{
                 "color": "#F7464A",
@@ -221,7 +221,7 @@
         "sizex": 1,
         "sizey": 1,
         "config": {
-            "title": "其他",
+            "title": "Other",
             "type": "Pie",
             "data_config": [{
                 "value": 300,
@@ -248,7 +248,7 @@
         "sizex": 1,
         "sizey": 1,
         "config": {
-            "title": "其他",
+            "title": "Other",
             "type": "Doughnut",
             "data_config": [{
                 "color":"#F7464A",
